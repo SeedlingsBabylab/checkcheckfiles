@@ -67,7 +67,7 @@ if __name__ == "__main__":
                     for visit in output_table_dict[subject]:
                         old_value = output_table_dict[subject][visit]
                         if "{}_{}".format(subject, visit) in empty_files_keys:
-                            output_table_dict[subject][visit] = old_value+"-[passes-check]"
+                            output_table_dict[subject][visit] = old_value+"-[check]"
 
                 pprint.pprint(output_table_dict)
 
