@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
                 writer.writerow(fieldnames)
                 for subject in output_table_dict:
-                    visit_range = [None]*len(output_table_dict[subject])
+                    visit_range = [None]*(len(output_table_dict[subject])-1)
                     for visit in output_table_dict[subject]:
                         if visit != "subject":
                             visit_range[int(visit)-6] = output_table_dict[subject][visit]
